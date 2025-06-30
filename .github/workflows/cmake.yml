@@ -20,10 +20,10 @@ jobs:
     strategy:
       matrix:
           os: ["windows-latest", "ubuntu-latest", "macos-latest"]
-          qt_version: ["5.15.2", "6.9.0"]
+          qt_version: ["5.13.1"]
           exclude:
             - os: "macos-latest"
-              qt_version: "5.15.2" # only available for x86, macos compiles on arm
+              qt_version: "5.13.1" # only available for x86, macos compiles on arm
     runs-on: ${{ matrix.os }}
 
     steps:
