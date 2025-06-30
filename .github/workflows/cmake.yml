@@ -5,7 +5,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+  workflow_dispatch:
+  
 env:
   BUILD_TYPE: Release
   CPM_SOURCE_CACHE: ${{ github.workspace }}/cpm_modules
